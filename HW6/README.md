@@ -18,7 +18,8 @@ I recompiled on an Ubuntu VM and checked for memory leaks with valgrind with the
 `valgrind --tool=memcheck --leak-check=yes --show-reachable=yes --num-callers=20 --track-fds=yes ./test_tree`
 It returned "No memory leaks possible".
 ### Expected Output
-```Created tree centerN at 0x109401fc0 with key 1 and value 2
+```
+Created tree centerN at 0x109401fc0 with key 1 and value 2
 Created tree leftN at 0x109401f90 with key 1 and value 1
 Created tree rightN at 0x109401f60 with key 1 and value 3
 Node at LRLLLLL 0x0
@@ -29,4 +30,5 @@ Node at -1543j%klsdfa 0x0
 Path to key 1 is L
 Path to key 3 is -
 Path to key -3 is -
-Tree Deleted, program complete!```
+Tree Deleted, program complete!
+```
